@@ -23,13 +23,13 @@
     .navigation li {position: relative; list-style: none; width: 80px; margin: 0 5px;}
     .navigation li::before {content: ""; position: absolute; top: 35px; left: 50%; transform: translateX(-50%);
       width: 5px; height: 5px; background: #222; border-radius: 50%; transition: 0.5s;}
-    .navigation li.active::before {background: #ddd; box-shadow: 0 0 5px rgba(255,255,255,0.8), 0 0 10px rgba(255,255,255,0.6), 0 0 20px rgba(255,255,255,0.4), 0 0 30px rgba(255,255,255,0.3);}
+    .navigation li.active::before {background: #ddd; box-shadow: 0 0 5px rgba(59,130,246,0.8), 0 0 10px rgba(59,130,246,0.6), 0 0 20px rgba(59,130,246,0.4), 0 0 30px rgba(59,130,246,0.3);}
     .navigation li a {display: flex; align-items: center; justify-content: center; flex-direction: column; text-decoration: none;}
     .navigation li a .icon {position: absolute; font-size: 1.75em; width: 80px; height: 80px;
       display: flex; align-items: center; justify-content: center; color: #fff; border-radius: 50px;
       transition: 0.5s; transition-delay: 0.2s; text-shadow: 0 0 10px rgba(255,255,255,0.3);}
     .navigation li.active a .icon {background: #808080; color: #fff; transform: translateY(-55px);
-      box-shadow: 0 0 10px rgba(255,255,255,0.6), 0 0 20px rgba(255,255,255,0.4), 0 0 30px rgba(255,255,255,0.3), 5px 5px 7px rgba(0,0,0,0.25), inset 2px 2px 3px rgba(255,255,255,0.25), inset -3px -3px 5px rgba(0,0,0,0.5); transition-delay: 0s;}
+      box-shadow: 0 0 10px rgba(59,130,246,0.6), 0 0 20px rgba(59,130,246,0.4), 0 0 30px rgba(59,130,246,0.3), 5px 5px 7px rgba(0,0,0,0.25), inset 2px 2px 3px rgba(255,255,255,0.25), inset -3px -3px 5px rgba(0,0,0,0.5); transition-delay: 0s;}
     .navigation li a .icon::before {content: ""; position: absolute; inset: 10px; background: #2f363e; border-radius: 50%;
       box-shadow: 5px 5px 5px rgba(0,0,0,0.5),inset 2px 2px 3px rgba(255,255,255,0.25),inset -3px -3px 5px rgba(0,0,0,0.5); transform: scale(0); transition: 0.5s;}
     .navigation li.active a .icon::before {transform: scale(1);}
