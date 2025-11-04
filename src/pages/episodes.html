@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Episodes — gittisak go Podcast</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --bg:#0b0f14;
+      --accent1:#ff3b30;
+      --accent2:#ff9500;
+      --accent3:#34c759;
+      --accent4:#5e5ce6;
+    }
+    body {
+      background: linear-gradient(180deg,#07090b 0%,var(--bg) 100%);
+      color: #e6eef6;
+      font-family: 'Inter', sans-serif;
+    }
+    /* moved episode utilities to shared CSS: ../assets/css/episodes.css */
+  </style>
+  <link rel="stylesheet" href="../assets/css/episodes.css">
+</head>
+
+<body class="min-h-screen flex flex-col items-center p-6">
+
+  <!-- Header -->
+  <header class="w-full max-w-5xl flex items-center justify-between">
+    <h1 class="text-lg md:text-xl font-bold text-white">🎙️ gittisak go Podcast</h1>
+    <a href="/index.html" class="text-slate-400 text-sm hover:text-white">← กลับหน้าแรก</a>
+  </header>
+  <!-- Hero + Featured (นำมาจากหน้าแรก) -->
+  <section class="w-full max-w-5xl px-4 md:px-6 mt-8 text-center">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-[--accent3]">ชีวิตสั้น จงยิ้มในขณะที่ยังมีฟันอยู่</h2>
+    <p class="text-slate-300 mt-3 text-sm md:text-base max-w-2xl mx-auto">
+      เจาะลึกเรื่องราวเบื้องหลัง Gitmint-Go และ Model Context Protocol (MCP) รากฐานของ Agent ปฏิวัติการตลาดไทย ที่จะเปลี่ยน Chatbot ให้กลายเป็นพนักงานที่ทำงานได้จริง
+    </p>
+
+    <div class="mt-6 flex flex-col sm:flex-row justify-center gap-3">
+      <a href="https://podcasts.apple.com/th/new" target="_blank"
+         class="px-4 py-2 rounded-lg font-semibold text-white"
+         style="background:linear-gradient(90deg,var(--accent4),var(--accent1));">
+         🎧 ฟังบน Apple Podcasts
+      </a>
+      <a href="https://open.spotify.com/" target="_blank"
+         class="px-4 py-2 rounded-lg font-semibold text-white bg-white/10 hover:bg-white/20">
+         ▶️ ฟังบน Spotify
+      </a>
+    </div>
+  </section>
+
+  <!-- Unified Episodes grid: EP.1 - EP.6 -->
+  <section class="w-full max-w-5xl px-4 md:px-6 mt-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- EP.1 -->
+      <div class="bg-white/5 p-4 rounded-2xl shadow-lg border border-white/10 flex flex-col episode-card">
+        <h4 class="text-lg font-semibold mb-2 text-[--accent3]">EP.1: จุดเริ่มต้น</h4>
+        <div class="episode-media" role="button" tabindex="0" data-src="https://open.spotify.com/embed/episode/{SPOTIFY_EPISODE_ID_1}?utm_source=generator" aria-label="เล่น EP.1">
+          <div class="poster" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.35));"></div>
+          <div class="play-button" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+        <p class="text-slate-400 text-sm mt-3">ทำไม Chatbot ที่เราใช้ถึงทำได้แค่ 'คุย'? เจาะลึกวิสัยทัศน์ MCP และการสร้าง AI Agent ที่ 'ลงมือทำ' จริง</p>
+      </div>
+
+      <!-- EP.2 -->
+      <div class="bg-white/5 p-4 rounded-2xl shadow-lg border border-white/10 flex flex-col episode-card">
+        <h4 class="text-lg font-semibold mb-2 text-[--accent3]">EP.2: แผนแม่บท MCP</h4>
+        <div class="episode-media" role="button" tabindex="0" data-src="https://open.spotify.com/embed/episode/{SPOTIFY_EPISODE_ID_2}?utm_source=generator" aria-label="เล่น EP.2">
+          <div class="poster" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.35));"></div>
+          <div class="play-button" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+        <p class="text-slate-400 text-sm mt-3">เจาะลึกสถาปัตยกรรม Model Context Protocol และการสร้าง 'No-Code Playground' ให้ลูกค้าสร้าง Agent ได้เอง</p>
+      </div>
+
+      <!-- EP.3 -->
+      <div class="bg-white/5 p-4 rounded-2xl shadow-lg border border-white/10 flex flex-col episode-card">
+        <h4 class="text-lg font-semibold mb-2 text-[--accent3]">EP.3: ยุทธศาสตร์การขยายตัว</h4>
+        <div class="episode-media" role="button" tabindex="0" data-src="https://open.spotify.com/embed/episode/{SPOTIFY_EPISODE_ID_3}?utm_source=generator" aria-label="เล่น EP.3">
+          <div class="poster" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.35));"></div>
+          <div class="play-button" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+        <p class="text-slate-400 text-sm mt-3">สถาปัตยกรรม Event-Driven, การใช้ LocalAI+Stable Diffusion, และการ Deploy บน AWS/GCP เพื่อรองรับการเติบโต</p>
+      </div>
+
+      <!-- EP.4 -->
+      <div class="bg-white/5 p-4 rounded-2xl shadow-lg border border-white/10 flex flex-col episode-card">
+        <h4 class="text-lg font-semibold mb-2 text-[--accent3]">EP.4: ส่วนเสริมเชิงผู้เชี่ยวชาญ</h4>
+        <div class="episode-media" role="button" tabindex="0" data-src="https://open.spotify.com/embed/episode/{SPOTIFY_EPISODE_ID_4}?utm_source=generator" aria-label="เล่น EP.4">
+          <div class="poster" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.35));"></div>
+          <div class="play-button" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+        <p class="text-slate-400 text-sm mt-3">เจาะลึกชั้นความปลอดภัย (AI Security), การตรวจสอบ (Observability), และการสร้างฐานความรู้ภาษาไทย (Thai-Optimized)</p>
+      </div>
+
+      <!-- EP.5 -->
+      <div class="bg-white/5 p-4 rounded-2xl shadow-lg border border-white/10 flex flex-col episode-card">
+        <h4 class="text-lg font-semibold mb-2 text-[--accent3]">EP.5: แนะนำพอดแคสต์</h4>
+        <div class="episode-media" role="button" tabindex="0" data-src="https://open.spotify.com/embed/episode/{SPOTIFY_EPISODE_ID}?utm_source=generator" aria-label="เล่น EP.5">
+          <div class="poster" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.35));"></div>
+          <div class="play-button" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+        <p class="text-slate-400 text-sm mt-3">ตอนแรกของ gittisak go — รู้จักเราและแนวคิดของรายการ 🎧</p>
+      </div>
+
+      <!-- EP.6 -->
+      <div class="bg-white/5 p-4 rounded-2xl shadow-lg border border-white/10 flex flex-col episode-card">
+        <h4 class="text-lg font-semibold mb-2 text-[--accent3]">EP.6: เครื่องมือเปลี่ยนชีวิตนักพัฒนา</h4>
+        <div class="episode-media" role="button" tabindex="0" data-src="https://www.youtube.com/embed/{YOUTUBE_VIDEO_ID}" aria-label="เล่น EP.6">
+          <div class="poster" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.35));"></div>
+          <div class="play-button" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+        <p class="text-slate-400 text-sm mt-3">แชร์เครื่องมือและ workflow ที่ช่วยให้ชีวิต dev ดีขึ้น 🚀</p>
+      </div>
+
+      <!-- EP.7 (Local .m4a test) -->
+      <div class="bg-white/5 p-4 rounded-2xl shadow-lg border border-white/10 flex flex-col episode-card">
+        <h4 class="text-lg font-semibold mb-2 text-[--accent3]">EP.7: เลิกเปรียบเทียบ</h4>
+        <div class="episode-media" role="button" tabindex="0" data-src="../m4a/เลิกเปรียบเทียบชีวิตตัวเองกับสิ่งที่เห็นในโชเชียลมีเดีย.m4a" aria-label="เล่น EP.7">
+          <div class="poster" style="background-image:linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.35));"></div>
+          <div class="play-button" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </div>
+        <p class="text-slate-400 text-sm mt-3">ตอนทดลอง: เล่นไฟล์ .m4a ภายในโปรเจกต์ — ใช้เพื่อทดสอบเครื่องเล่นในหน้า</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="mt-16 mb-6 text-xs text-slate-500 text-center">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="flex items-center justify-center gap-3 mb-3">
+        <span class="text-slate-400 mr-2">แชร์:</span>
+        <button onclick="shareToFacebook()" aria-label="แชร์ไปที่ Facebook"
+                class="px-3 py-1 rounded-lg bg-blue-600 text-white text-sm hover:bg-blue-700 transition flex items-center gap-2">
+          <svg viewBox="0 0 24 24" class="w-4 h-4" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M22 12a10 10 0 10-11.6 9.9v-7h-2.2v-2.9h2.2V9.1c0-2.2 1.3-3.4 3.3-3.4.95 0 1.95.17 1.95.17v2.1h-1.08c-1.06 0-1.39.66-1.39 1.33v1.6h2.37l-.38 2.9h-1.99v7A10 10 0 0022 12z"/></svg>
+          Facebook
+        </button>
+        <button onclick="shareToLine()" aria-label="แชร์ไปที่ Line"
+                class="px-3 py-1 rounded-lg bg-emerald-500 text-white text-sm hover:bg-emerald-600 transition flex items-center gap-2">
+          <svg viewBox="0 0 24 24" class="w-4 h-4" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M21 3H3v14h4v4l4-4h10z"/></svg>
+          Line
+        </button>
+        <button onclick="copyLink()" aria-label="คัดลอกลิงก์"
+                class="px-3 py-1 rounded-lg bg-white/10 text-white text-sm hover:bg-white/20 transition flex items-center gap-2">
+          <svg viewBox="0 0 24 24" class="w-4 h-4" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M16 1H4a2 2 0 00-2 2v12h2V3h12V1zM21 5H8a2 2 0 00-2 2v14a2 2 0 002 2h13a2 2 0 002-2V7a2 2 0 00-2-2zm-1 11H9V8h11v8z"/></svg>
+          คัดลอกลิงก์
+        </button>
+      </div>
+
+      <div class="text-slate-500">© 2025 gitmint-goAPI — gittisak go</div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/player.js" defer></script>
+
+</body>
+</html>
