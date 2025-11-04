@@ -3,74 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2-1/css/ionicons.min.css">
     <title>About</title>
     <style>
         body {
-            padding-bottom: 50px;
-          font-family: 'Poppins', sans-serif;
+            padding-bottom: 140px;
         }
-        
-        .navbar {
+        .magic-nav {
             background-color: #808080;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
             display: flex;
             justify-content: space-around;
             padding: 10px 0;
         }
-
-        .navbar a {
+        .magic-nav a {
             color: white;
             text-decoration: none;
-            padding: 10px;
-            position: relative;
+            text-align: center;
         }
-
-        .navbar a::after {
-            content: '';
-            background: white;
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            width: 0;
-            height: 2px;
-            transition: width 0.3s;
-        }
-
-        .navbar a:hover::after,
-        .navbar a.active::after {
-            width: 100%;
-        }
-
-        .navbar i {
-            color: white;
+        .magic-nav a.active {
             text-shadow: 0 0 10px white;
         }
     </style>
 </head>
 <body>
-    <nav class="navbar">
-        <a href="../../index.html" class="active"><i class="ion-home"></i> Home</a>
-        <a href="episodes.html"><i class="ion-videocamera"></i> Episodes</a>
-        <a href="listen.html"><i class="ion-play"></i> Listen</a>
-        <a href="about.html"><i class="ion-information-circle"></i> About</a>
-        <a href="contact.html"><i class="ion-contact"></i> Contact</a>
-    </nav>
+    <!-- Existing content of about.html -->
 
-    <!-- Main content of the About page -->
-    <h1>About Us</h1>
-    <p>Your content here...</p>
+    <div class="magic-nav">
+        <a href="#" class="active">เกี่ยวกับ</a>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
 
-    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
     <script>
-        // JavaScript for active link state
-        const navLinks = document.querySelectorAll('.navbar a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.forEach(l => l.classList.remove('active'));
-                link.classList.add('active');
-            });
-        });
+        // JavaScript to handle active state here if necessary
     </script>
 </body>
 </html>
