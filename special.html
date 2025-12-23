@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>🎖💯gitmint-th | วิธีเพิ่มผู้ติดตาม</title>
+  <title>🎖💯gitmint-th | Special Page</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root {
@@ -37,14 +37,26 @@
       transform: translateY(20px); padding: 2px 10px; background: #fff; border-radius: 15px;
       box-shadow: 5px 5px 7px rgba(0,0,0,0.25),inset -3px -3px 5px rgba(0,0,0,0.5); transition: 0.5s; transition-delay: 0s;}
     .navigation li.active a .text {opacity: 1; transform: translateY(10px); transition-delay: 0.2s;}
+    
+    /* Parallax effect */
+    .parallax {
+      position: relative;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 400px;
+    }
   </style>
 </head>
 
 <body class="min-h-screen flex flex-col items-center p-0">
+  <!-- Hero Section -->
   <header class="w-full bg-[#0b0f14]/90 backdrop-blur sticky top-0 z-10">
     <div class="max-w-5xl mx-auto flex items-center justify-between px-4 py-3">
-      <h1 class="text-lg md:text-xl font-bold text-white">🎖💯gitmint-th | วิธีเพิ่มผู้ติดตาม</h1>
+      <h1 class="text-lg md:text-xl font-bold text-white">🎖💯gitmint-th | Special Page</h1>
       <nav class="hidden sm:flex gap-4 text-sm">
+        <a href="index.html" class="text-slate-300 hover:text-white">หน้าแรก</a>
         <a href="src/pages/about.html" class="text-slate-300 hover:text-white">เกี่ยวกับ</a>
         <a href="src/pages/episodes.html" class="text-slate-300 hover:text-white">ทุกตอน</a>
         <a href="src/pages/contact.html" class="text-slate-300 hover:text-white">ติดต่อ</a>
@@ -54,10 +66,13 @@
       </button>
     </div>
   </header>
+
+  <!-- Hero Content -->
   <section class="w-full max-w-5xl px-4 md:px-6 mt-12 text-center">
-    <h2 class="text-4xl md:text-5xl font-extrabold text-[--accent3]">พร้อมที่จะเติมพลัง</h2>
+    <h2 class="text-4xl md:text-5xl font-extrabold text-[--accent3]">Special Episode Collection</h2>
     <p class="text-slate-300 mt-3 text-base md:text-lg max-w-2xl mx-auto">
-      ให้การตลาดโซเชียลมีเดียของคุณหรือยัง? 
+      รวมตอนพิเศษที่คุณไม่ควรพลาด
+    </p>
     <div class="mt-8 flex flex-col sm:flex-row justify-center gap-3">
       <a href="https://podcasts.apple.com/th/new" target="_blank"
          class="px-5 py-3 rounded-xl font-semibold text-white transition-all duration-300"
@@ -70,9 +85,23 @@
       </a>
     </div>
   </section>
+
+  <!-- Parallax Section -->
+  <section class="w-full parallax mt-16" style="background-image: linear-gradient(rgba(11, 15, 20, 0.7), rgba(11, 15, 20, 0.7)), url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1200 600%22%3E%3Crect fill=%22%230b0f14%22 width=%221200%22 height=%22600%22/%3E%3Cpath fill=%22%235e5ce6%22 d=%22M0,300 Q300,100 600,300 T1200,300 L1200,600 L0,600 Z%22 opacity=%220.3%22/%3E%3C/svg%3E');">
+    <div class="flex items-center justify-center h-full">
+      <div class="text-center px-4 py-16">
+        <h3 class="text-3xl md:text-4xl font-bold text-white mb-4">Parallax Effect</h3>
+        <p class="text-slate-300 text-lg max-w-2xl mx-auto">
+          เนื้อหาพิเศษที่จะทำให้คุณได้เรียนรู้มากขึ้น
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Episodes -->
   <section class="w-full max-w-5xl px-4 md:px-6 mt-16">
     <h3 class="text-2xl md:text-3xl font-bold text-white mb-6 text-center md:text-left">
-      ตอนล่าสุด
+      Featured Episodes
     </h3>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div class="bg-white/5 p-4 rounded-2xl shadow-lg border border-white/10 flex flex-col h-full">
@@ -93,37 +122,17 @@
           <p>เจาะลึกเหตุผลที่ Go คือหัวใจของ 'Agent Lifecycle' การจัดการ Concurrency (Goroutines) ของ Agent นับหมื่นตัว</p>
         </div>
       </div>
-      <div class="bg-white/5 p-4 rounded-2xl shadow-lg border border-white/10 flex flex-col h-full">
-        <h4 class="text-lg font-semibold mb-3 text-[--accent4]">EP. 3: Cloud Infrastructure Integration</h4>
-        <iframe class="flex-shrink-0" style="border-radius:12px;"
-          src="https://open.spotify.com/embed/episode/45Mswv2gwcAFCoytcN0p1A?utm_source=generator"
-          width="100%" height="152" frameborder="0" allow="encrypted-media"></iframe>
-        <div class="mt-4 text-slate-400 text-sm flex-grow">
-          <p>เบื้องหลังทีม 'Cloud Infrastructure Integration' ในการจัดการทรัพยากรบน Bare-metal และ Cloud และการ Deploy Agent</p>
-        </div>
-      </div>
-      <div class="bg-white/5 p-4 rounded-2xl shadow-lg border border-white/10 flex flex-col h-full">
-        <h4 class="text-lg font-semibold mb-3 text-[--accent1]">EP. 4: The Inter-Agent Communication Layer</h4>
-        <iframe class="flex-shrink-0" style="border-radius:12px;"
-          src="https://open.spotify.com/embed/episode/12DYJKg3N6j4ibSyFguOhx?utm_source=generator"
-          width="100%" height="152" frameborder="0" allow="encrypted-media"></iframe>
-        <div class="mt-4 text-slate-400 text-sm flex-grow">
-          <p>การใช้ Go สร้างเลเยอร์การสื่อสารระหว่าง Agent (Inter-Agent Communication) และการใช้ไลบรารี gRPC</p>
-        </div>
-      </div>
     </div>
   </section>
-  <section class="w-full text-center mt-12">
-    <a href="src/pages/episodes.html"
-       class="px-6 py-3 rounded-xl font-semibold text-white bg-white/10 hover:bg-white/20 transition-colors duration-300">
-       ดูทุกตอน (View All Episodes) &rarr;
-    </a>
-  </section>
+
+  <!-- Footer -->
   <footer class="mt-16 mb-6 text-xs text-slate-500 text-center px-4">
-        © 2025 gitmint-goAPI🚀🦧😏❤️gittisak go 💬 | สร้างสรรค์เพื่อปฏิวัติวงการ Tech
+    © 2025 gitmint-goAPI🚀🦧😏❤️gittisak go 💬 | สร้างสรรค์เพื่อปฏิวัติวงการ Tech
   </footer>
+
+  <!-- Magic Navigation Widget (NO default active tab) -->
   <ul class="navigation">
-    <li class="active">
+    <li>
       <a href="index.html">
         <span class="icon">
           <ion-icon name="home-outline"></ion-icon>
@@ -142,7 +151,7 @@
     <li>
       <a href="https://open.spotify.com/">
         <span class="icon">
-          <ion-icon name="play-circle-outline"></ion-icon> 
+          <ion-icon name="play-circle-outline"></ion-icon>
         </span>
         <span class="text">ฟังเลย</span>
       </a>
@@ -164,6 +173,7 @@
       </a>
     </li>
   </ul>
+  
   <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
   <script>
     let list = document.querySelectorAll(".navigation li");
