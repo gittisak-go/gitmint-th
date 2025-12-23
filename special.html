@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>🎖💯gitmint-th | วิธีเพิ่มผู้ติดตาม</title>
+  <title>Special — gitmint-th | ตอนพิเศษ</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root {
@@ -37,14 +37,23 @@
       transform: translateY(20px); padding: 2px 10px; background: #fff; border-radius: 15px;
       box-shadow: 5px 5px 7px rgba(0,0,0,0.25),inset -3px -3px 5px rgba(0,0,0,0.5); transition: 0.5s; transition-delay: 0s;}
     .navigation li.active a .text {opacity: 1; transform: translateY(10px); transition-delay: 0.2s;}
+    .parallax-section {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 400px;
+      position: relative;
+    }
   </style>
 </head>
 
 <body class="min-h-screen flex flex-col items-center p-0">
   <header class="w-full bg-[#0b0f14]/90 backdrop-blur sticky top-0 z-10">
     <div class="max-w-5xl mx-auto flex items-center justify-between px-4 py-3">
-      <h1 class="text-lg md:text-xl font-bold text-white">🎖💯gitmint-th | วิธีเพิ่มผู้ติดตาม</h1>
+      <h1 class="text-lg md:text-xl font-bold text-white">🌟 Special Episode — gitmint-th</h1>
       <nav class="hidden sm:flex gap-4 text-sm">
+        <a href="index.html" class="text-slate-300 hover:text-white">หน้าแรก</a>
         <a href="src/pages/about.html" class="text-slate-300 hover:text-white">เกี่ยวกับ</a>
         <a href="src/pages/episodes.html" class="text-slate-300 hover:text-white">ทุกตอน</a>
         <a href="src/pages/contact.html" class="text-slate-300 hover:text-white">ติดต่อ</a>
@@ -55,60 +64,69 @@
     </div>
   </header>
   <section class="w-full max-w-5xl px-4 md:px-6 mt-12 text-center">
-    <h2 class="text-4xl md:text-5xl font-extrabold text-[--accent3]">พร้อมที่จะเติมพลัง</h2>
+    <h2 class="text-4xl md:text-5xl font-extrabold text-[--accent1]">ตอนพิเศษ: Behind The Scenes</h2>
     <p class="text-slate-300 mt-3 text-base md:text-lg max-w-2xl mx-auto">
-      ให้การตลาดโซเชียลมีเดียของคุณหรือยัง? 
+      เบื้องหลังการสร้างและพัฒนา gitmint-th Podcast พร้อมเคล็ดลับพิเศษสำหรับนักพัฒนา
+    </p>
     <div class="mt-8 flex flex-col sm:flex-row justify-center gap-3">
-      <a href="https://podcasts.apple.com/th/new" target="_blank"
-         class="px-5 py-3 rounded-xl font-semibold text-white transition-all duration-300"
-         style="background:linear-gradient(90deg,var(--accent4),var(--accent1)); box-shadow: 0 4px 15px rgba(255, 59, 48, 0.4);">
-         🎧 ฟังบน Apple Podcasts
-      </a>
       <a href="https://open.spotify.com/" target="_blank"
-         class="px-5 py-3 rounded-xl font-semibold text-white bg-white/10 hover:bg-white/20 transition-colors duration-300">
-         ▶️ ฟังบน Spotify
+         class="px-5 py-3 rounded-xl font-semibold text-white transition-all duration-300"
+         style="background:linear-gradient(90deg,var(--accent1),var(--accent4)); box-shadow: 0 4px 15px rgba(255, 59, 48, 0.4);">
+         🎧 ฟังตอนพิเศษ
       </a>
+      <a href="index.html"
+         class="px-5 py-3 rounded-xl font-semibold text-white bg-white/10 hover:bg-white/20 transition-colors duration-300">
+         ← กลับหน้าแรก
+      </a>
+    </div>
+  </section>
+  <section class="w-full parallax-section mt-16 flex items-center justify-center" style="background-image: linear-gradient(rgba(11, 15, 20, 0.7), rgba(11, 15, 20, 0.7)), url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1200 600%22><rect fill=%22%23242433%22 width=%221200%22 height=%22600%22/><path fill=%22%235e5ce6%22 opacity=%22.3%22 d=%22M0 300 Q300 100 600 300 T1200 300 V600 H0 Z%22/></svg>');">
+    <div class="text-center px-4">
+      <h3 class="text-3xl md:text-4xl font-bold text-white">The Journey Continues</h3>
+      <p class="text-slate-200 mt-4 text-lg max-w-xl mx-auto">
+        จากความคิดเล็ก ๆ สู่แพลตฟอร์มที่เปลี่ยนแปลงวงการ Tech ไทย
+      </p>
     </div>
   </section>
   <section class="w-full max-w-5xl px-4 md:px-6 mt-16">
     <h3 class="text-2xl md:text-3xl font-bold text-white mb-6 text-center md:text-left">
-      ตอนล่าสุด
+      Featured Special Episodes
     </h3>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div class="bg-white/5 p-4 rounded-2xl shadow-lg border border-white/10 flex flex-col h-full">
-        <h4 class="text-lg font-semibold mb-3 text-[--accent2]">EP. 1: จาก Monolith สู่ MCP</h4>
+        <h4 class="text-lg font-semibold mb-3 text-[--accent1]">🌟 Special: The Origin Story</h4>
         <iframe class="flex-shrink-0" style="border-radius:12px;"
           src="https://open.spotify.com/embed/episode/6XrhTqqHgG9tXvvc0HbXM1?utm_source=generator"
           width="100%" height="152" frameborder="0" allow="encrypted-media"></iframe>
         <div class="mt-4 text-slate-400 text-sm flex-grow">
-          <p>การเดินทาง 3 ปีของเราในการทุบระบบควบคุม Agent แบบเดิม (Monolithic) และสร้าง 'Agent Lifecycle' ใหม่ด้วย Go</p>
+          <p>ย้อนรอยเรื่องราวตั้งแต่วันแรกที่เราเริ่มต้น Podcast นี้ และแรงบันดาลใจที่ทำให้เกิด gitmint-th</p>
         </div>
       </div>
       <div class="bg-white/5 p-4 rounded-2xl shadow-lg border border-white/10 flex flex-col h-full">
-        <h4 class="text-lg font-semibold mb-3 text-[--accent3]">EP. 2: ทำไมต้อง Go? (Concurrency & K8s)</h4>
+        <h4 class="text-lg font-semibold mb-3 text-[--accent4]">💡 Special: Tips & Tricks</h4>
         <iframe class="flex-shrink-0" style="border-radius:12px;"
           src="https://open.spotify.com/embed/episode/0EJ6U0DSdWVAjLWGhfvV5g?utm_source=generator"
           width="100%" height="152" frameborder="0" allow="encrypted-media"></iframe>
         <div class="mt-4 text-slate-400 text-sm flex-grow">
-          <p>เจาะลึกเหตุผลที่ Go คือหัวใจของ 'Agent Lifecycle' การจัดการ Concurrency (Goroutines) ของ Agent นับหมื่นตัว</p>
+          <p>เคล็ดลับและเทคนิคพิเศษสำหรับนักพัฒนาที่อยากเพิ่มประสิทธิภาพในการทำงาน พร้อม Best Practices</p>
         </div>
       </div>
       <div class="bg-white/5 p-4 rounded-2xl shadow-lg border border-white/10 flex flex-col h-full">
-        <h4 class="text-lg font-semibold mb-3 text-[--accent4]">EP. 3: Cloud Infrastructure Integration</h4>
+        <h4 class="text-lg font-semibold mb-3 text-[--accent3]">🎤 Special: Guest Interviews</h4>
         <iframe class="flex-shrink-0" style="border-radius:12px;"
           src="https://open.spotify.com/embed/episode/45Mswv2gwcAFCoytcN0p1A?utm_source=generator"
           width="100%" height="152" frameborder="0" allow="encrypted-media"></iframe>
         <div class="mt-4 text-slate-400 text-sm flex-grow">
-          <p>เบื้องหลังทีม 'Cloud Infrastructure Integration' ในการจัดการทรัพยากรบน Bare-metal และ Cloud และการ Deploy Agent</p>
+          <p>สัมภาษณ์พิเศษกับผู้เชี่ยวชาญและนักพัฒนาชื่อดังในวงการ Tech ไทย แชร์ประสบการณ์และมุมมองที่น่าสนใจ</p>
         </div>
       </div>
       <div class="bg-white/5 p-4 rounded-2xl shadow-lg border border-white/10 flex flex-col h-full">
-        <h4 class="text-lg font-semibold mb-3 text-[--accent1]">EP. 4: The Inter-Agent Communication Layer</h4>
+        <h4 class="text-lg font-semibold mb-3 text-[--accent2]">🚀 Special: Future Roadmap</h4>
         <iframe class="flex-shrink-0" style="border-radius:12px;"
           src="https://open.spotify.com/embed/episode/12DYJKg3N6j4ibSyFguOhx?utm_source=generator"
           width="100%" height="152" frameborder="0" allow="encrypted-media"></iframe>
         <div class="mt-4 text-slate-400 text-sm flex-grow">
-          <p>การใช้ Go สร้างเลเยอร์การสื่อสารระหว่าง Agent (Inter-Agent Communication) และการใช้ไลบรารี gRPC</p>
+          <p>แผนการและวิสัยทัศน์ของ gitmint-th ในอนาคต พร้อมเปิดเผยฟีเจอร์ใหม่ ๆ ที่กำลังจะมา</p>
         </div>
       </div>
     </div>
@@ -123,7 +141,7 @@
         © 2025 gitmint-goAPI🚀🦧😏❤️gittisak go 💬 | สร้างสรรค์เพื่อปฏิวัติวงการ Tech
   </footer>
   <ul class="navigation">
-    <li class="active">
+    <li>
       <a href="index.html">
         <span class="icon">
           <ion-icon name="home-outline"></ion-icon>
